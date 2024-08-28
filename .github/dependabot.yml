@@ -6,19 +6,10 @@
 
 version: 2
 updates:
-  - package-ecosystem: "devcontainers"
-    directory: "/"
-    schedule:
-      interval: weekly
-    pull-request-branch-name:
-      separator: "-"
-    rebase-strategy: "auto"
-    commit-message:
-      prefix: "deps"
-    open-pull-requests-limit: 10
-    ignore:
-      - dependency-name: "example-dependency"
-        versions: ["1.x"]
+ - package-ecosystem: "devcontainers"
+   directory: "/"
+   schedule:
+     interval: weekly
 
 # Trigger Dependabot on pull request to main
 on:
