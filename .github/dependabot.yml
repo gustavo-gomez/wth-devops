@@ -10,9 +10,3 @@ updates:
    directory: "/"
    schedule:
      interval: weekly
-
-# Trigger Dependabot on pull request to main
-on:
-  pull_request:
-    branches:
-      - main
